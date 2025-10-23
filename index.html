@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum Vitae de Hlagua - Desarrollador">
+    <title>Hlagua - Currículum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .skill-item h3 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .experience-item, .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: #764ba2;
+            margin-bottom: 8px;
+            font-size: 1.3em;
+        }
+
+        .experience-item .date, .education-item .date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .experience-item p, .education-item p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hlagua</h1>
+            <p>Desarrollador | Programador | Profesional en Tecnología</p>
+        </header>
+
+        <div class="content">
+            <section class="about">
+                <h2>Sobre Mí</h2>
+                <p>
+                    Soy un profesional apasionado por la tecnología y el desarrollo de software. 
+                    Me dedico a crear soluciones innovadoras y eficientes que marquen la diferencia. 
+                    Con experiencia en múltiples tecnologías y un constante deseo de aprender, 
+                    busco contribuir al desarrollo de proyectos desafiantes y significativos.
+                </p>
+            </section>
+
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Desarrollo Web</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Programación</h3>
+                        <p>Python, Java, C++</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Frameworks</h3>
+                        <p>React, Node.js, Django</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Herramientas</h3>
+                        <p>Git, GitHub, VS Code</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Bases de Datos</h3>
+                        <p>SQL, MongoDB, PostgreSQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Metodologías</h3>
+                        <p>Agile, Scrum, DevOps</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience">
+                <h2>Experiencia</h2>
+                <div class="experience-item">
+                    <h3>Desarrollador de Software</h3>
+                    <div class="date">2023 - Presente</div>
+                    <p>
+                        Desarrollo y mantenimiento de aplicaciones web y soluciones de software. 
+                        Colaboración en proyectos de equipo utilizando metodologías ágiles.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h3>Desarrollador Junior</h3>
+                    <div class="date">2022 - 2023</div>
+                    <p>
+                        Participación en el desarrollo de aplicaciones web. 
+                        Aprendizaje de tecnologías modernas y mejores prácticas de desarrollo.
+                    </p>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Educación</h2>
+                <div class="education-item">
+                    <h3>Ingeniería en Sistemas / Ciencias de la Computación</h3>
+                    <div class="date">Universidad</div>
+                    <p>
+                        Formación en fundamentos de programación, algoritmos, estructuras de datos, 
+                        y desarrollo de software.
+                    </p>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contacto</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/Hlagua" class="contact-link" target="_blank">GitHub</a>
+                    <a href="mailto:contacto@hlagua.com" class="contact-link">Email</a>
+                    <a href="https://linkedin.com/in/hlagua" class="contact-link" target="_blank">LinkedIn</a>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Hlagua. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
