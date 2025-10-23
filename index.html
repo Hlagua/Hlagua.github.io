@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículum Vitae de Henry Daniel Lagua Flores - Estudiante de Ingeniería de Software en la Universidad Técnica de Ambato" />
+  <title>Henry Daniel Lagua Flores | CV Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-width: 1100px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* COLUMNA IZQUIERDA */
+    .sidebar {
+      background-color: #0077b6;
+      color: white;
+      padding: 40px 30px;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .sidebar ul li {
+      margin: 6px 0;
+      font-size: 0.95em;
+    }
+
+    /* COLUMNA DERECHA */
+    .main {
+      padding: 40px 50px;
+    }
+
+    .name {
+      font-size: 2.4em;
+      font-weight: 600;
+      color: #1d3557;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      color: #0077b6;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      margin-bottom: 25px;
+    }
+
+    .contact p {
+      font-size: 0.95em;
+      margin: 4px 0;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+      border-left: 4px solid #0077b6;
+      padding-left: 10px;
+      font-size: 1.2em;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      color: #0077b6;
+      font-weight: 600;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #777;
+      background: #f1f3f6;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Columna Izquierda -->
+    <aside class="sidebar">
+      <h2>APTITUDES</h2>
+      <ul>
+        <li>Trabajo en equipo</li>
+        <li>Iniciativa</li>
+        <li>Resolución de problemas</li>
+        <li>Aprendizaje continuo</li>
+        <li>Comunicación efectiva</li>
+      </ul>
+
+      <h2>IDIOMAS</h2>
+      <ul>
+        <li>Español (Nativo)</li>
+        <li>Inglés (Intermedio)</li>
+      </ul>
+
+      <h2>HABILIDADES TÉCNICAS</h2>
+      <ul>
+        <li>Java, C#, JavaScript, TypeScript, SQL</li>
+        <li>React, Next.js, Vite, Chakra UI</li>
+        <li>NestJS, .NET Core, Express</li>
+        <li>PostgreSQL, MySQL</li>
+        <li>Entity Framework, Prisma ORM</li>
+        <li>Git, Node.js, Docker (básico)</li>
+      </ul>
+    </aside>
+
+    <!-- Columna Derecha -->
+    <main class="main">
+      <h1 class="name">Henry Daniel Lagua Flores</h1>
+      <h2 class="role">Estudiante de Ingeniería de Software</h2>
+
+      <div class="contact">
+        <p>📍 Ambato, Ecuador</p>
+        <p>✉️ <a href="mailto:henrydaniel.laguaflores@uta.edu.ec">henrydaniel.laguaflores@uta.edu.ec</a></p>
+        <p>💻 <a href="https://github.com/Hlagua">github.com/Hlagua</a></p>
+        <p>🔗 <a href="#">linkedin.com/in/henrylagua</a></p>
+      </div>
+
+      <section>
+        <h3>🎓 FORMACIÓN ACADÉMICA</h3>
+        <p><strong>Universidad Técnica de Ambato (UTA)</strong> — Ambato, Ecuador</p>
+        <p><em>Ingeniería en Software</em> | Cursando 4.º semestre (2022 – Actualidad)</p>
+        <ul>
+          <li>Programación estructurada y orientada a objetos</li>
+          <li>Desarrollo web full stack</li>
+          <li>Administración de bases de datos</li>
+          <li>Redes y sistemas distribuidos</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>🧩 PROYECTOS DESTACADOS</h3>
+        <p><strong>Sistema de Gestión de Seguros</strong></p>
+        <ul>
+          <li>Tecnologías: NestJS · Next.js · PostgreSQL</li>
+          <li>Sistema integral para gestión de pólizas, clientes y agentes con firma electrónica y roles.</li>
+        </ul>
+        <p><strong>Task Manager</strong></p>
+        <ul>
+          <li>Tecnologías: .NET Core · Blazor · EF Core</li>
+          <li>Aplicación con arquitectura Onion para la gestión de tareas con separación por capas.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>📜 CURSOS Y CERTIFICADOS</h3>
+        <ul>
+          <li>Desarrollo con React y TypeScript — Udemy</li>
+          <li>Introducción a .NET y Blazor — Microsoft Learn</li>
+          <li>Arquitectura de software limpia — Platzi</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>🧭 OBJETIVO PROFESIONAL</h3>
+        <p>Fortalecer mis habilidades en desarrollo de software mediante proyectos reales e innovadores.  
+        Aspiro a convertirme en desarrollador full stack profesional, aportando soluciones eficientes, seguras y escalables.</p>
+      </section>
+    </main>
+  </div>
+
+  <div class="footer">
+    © 2025 Henry Daniel Lagua Flores — Portafolio Personal
+  </div>
+</body>
+</html>
